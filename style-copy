@@ -1,0 +1,88 @@
+/* Logo */
+.logo img {
+
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 20px;
+  left: 40px;
+}
+
+.logo img:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+/* Navigation */
+nav {
+  position: absolute;
+  background-color: red;
+  top: 30px;
+  right: 25px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  font-family: Georgia, serif;
+  text-decoration: none;
+  font-size: meidum;
+  color: white;
+  padding: 15px;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover > a {
+  background-color: #fff;
+  color: red;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  z-index: 999;
+}
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  width: 150px;
+  background-color: red;
+}
+
+nav ul li ul li a {
+  color: white;
+  padding: 20px;
+  display: block;
+}
+
+
+.social-icons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
